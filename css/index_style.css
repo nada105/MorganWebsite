@@ -1,0 +1,360 @@
+*
+{
+    line-height: 1.5;
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+body
+{
+    background-color: #f1f1f1;
+}
+
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.border
+{
+    width: 50%;
+    height: 3px;
+    transition: all 500ms;
+    background-color: white;
+    opacity: 0;
+
+ 
+}
+li:hover .border
+{
+    width: 100%;
+    opacity: 1;
+}
+
+.home
+{
+  /*background-image: url(../img\ devfolio\ task/intro-bg.jpg);*/
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.73)),
+  url('../img\ devfolio\ task/intro-bg.jpg');
+    height: 650px;
+    background-size: cover;
+}
+.home h1
+{
+    font-size: 4rem;
+    color: #f1f1f1;
+}
+/*.home p
+{
+    animation-name: text;
+    font-size: 2rem;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+@keyframes text
+{
+    0%{left:0;top: 0;}
+    100%{left:50;top: 0; opacity: 0;}
+
+}*/
+
+/*.text1 
+{
+    margin-top: 5rem;
+    padding-top: 5rem;
+}*/
+ /*.text1 h5 
+{
+    font-size: 20px;
+    margin-top: 30px;
+}*/
+.home h5
+{
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 ;
+    padding: 0;
+    color: transparent;
+    /*padding-bottom: 30px;*/
+    margin-top: 20px;
+}
+
+ .home h5::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    animation: type 4s steps(30) infinite;
+    white-space: nowrap;
+    animation-iteration-count: infinite;;
+}
+
+@keyframes type
+{
+    0%
+    {
+        width: 0;
+    }
+    50%
+    {
+        width: 100%;
+    }
+    0%
+    {
+        width: 0;
+    }
+
+}
+
+
+/*about*/
+
+
+ /*.brd
+{
+    height: 3px;
+    width: 25%;
+    
+}
+.text
+{
+    font-size: 20px;
+    font-weight: 300;
+}*/
+
+
+ .brd
+{
+    height: 3px;
+    width: 25%;
+    
+}
+.about .text
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.about p
+{
+    font-size: 15px;
+
+}
+.about .skills p
+{
+   font-size: 20px;
+   font-weight: 300;
+}
+
+
+
+/*services*/
+
+
+.brd1
+{
+    height: 4px;
+    width: 3%;
+   
+}
+
+
+.service i
+{
+    border-radius:50%;
+    border: 10px solid #0078ff;
+    padding:20px;
+    transition: 1s all;
+}
+
+.service i:hover
+{
+    background-color: #0078ff;
+    transition: 1s all;
+    color: white;
+    border: 10px solid #aecaeb;
+}
+
+/*counter*/
+
+.counter 
+{
+    background-image:
+  linear-gradient(to bottom, rgba(0, 120, 255 ,0.8), rgba(0, 120,225, 0.3)),
+  url('../img\ devfolio\ task/post-3.jpg');
+  background-size: cover;
+  height: 620px;
+  background-attachment: fixed;
+}
+.counter i
+{
+    border-radius:50%;
+    border: 10px solid #aecaeb;
+    padding:10px;
+
+}
+.counter .num
+{
+    font-size: 25px;
+
+}
+
+/*item*/
+
+.image img
+{
+    transition: 1s all;
+}
+.work-box:hover img
+{
+    transform: scale(1.5);
+}
+
+.work-box i
+{
+    border-radius: 50%;
+    border: 1px solid #0078ff;
+    margin-right: 5px;;
+    padding: 5px;
+}
+
+/*testimonial*/
+.testomial
+{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 120, 255 ,0.8), rgba(0, 120,225, 0.5)),
+    url('../img\ devfolio\ task/overlay-bg.jpg');
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+.team i
+{
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+.carousel-indicators li
+{
+    width: 30;
+    height: 5;
+    background-color: #000;
+
+}
+.carousel-indicators .active
+{
+    background-color:#cde1f8;
+}
+
+/*blog*/
+.card-body .box
+{
+   top: -30px;
+   padding: 0 15px 5px;
+   height: 30px;
+
+
+}
+
+.card-blog a
+{
+    color: black;
+}
+.card-blog a:hover
+{
+    color: #007bff;
+}
+
+.card-title 
+{
+    font-size: 1.3rem;
+}
+
+
+.img-footer
+{
+    width: 32px;
+    height: 32px;
+}
+
+.post-author
+{
+    font-size: 16px;
+}
+
+/*footer*/
+.footer
+{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 120, 255 ,0.8), rgba(0, 120,225, 0.5)),
+    url('../img\ devfolio\ task/overlay-bg.jpg');
+    background-size: cover;
+    height: 650px;
+    background-position: center center;
+    
+    background-attachment: fixed;
+
+}
+.footer .container
+{
+    width: 100%;
+}
+
+ul
+{
+    list-style-type: none;
+}
+.btn
+{
+    padding:  1rem 3rem;
+}
+.social-icons i
+
+{
+    border-radius:50%;
+    border: 5px solid #0078ff;
+    padding:5px;
+    font-size: 1.5rem;
+    
+    transition: 1s all;
+}
+
+.social-icons i:hover
+{
+    background-color: #0078ff;
+    transition: 1s all;
+    color: white;
+    border: 5px solid #aecaeb;
+}
+
+
+
+.test
+{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 120, 255 ,0.8), rgba(0, 120,225, 0.5)),
+    url('../img\ devfolio\ task/overlay-bg.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
+}
+
+
+
+
